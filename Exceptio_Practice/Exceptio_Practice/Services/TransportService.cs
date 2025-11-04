@@ -1,0 +1,109 @@
+﻿using Exceptio_Practice.Exceptions;
+using Exceptio_Practice.Model;
+using Exceptio_Practice.Services.Interfaces;
+
+namespace Exceptio_Practice.Services
+{
+	public class TransportService : ITransportService
+	{
+		 Transport[] transports = new Transport[0];
+
+		public void CreateTransport(string model, string brand, int year, string title)
+		{
+			int id = 0;
+		IdInput: Console.WriteLine("Enter id");
+			try
+			{
+				if (!int.TryParse(Console.ReadLine(), out id))
+				{
+					throw new FormatException("Id must be a number");
+
+				}
+			}
+			catch (Exception ex)
+			{
+				Console.WriteLine(ex.Message);
+				goto IdInput;
+			}
+
+
+		ModelInput: Console.WriteLine("Enter model");
+			try
+			{
+				model = Console.ReadLine();
+				if (string.IsNullOrWhiteSpace(model))
+				{
+					throw new NullorException("Model cannot be null");
+				}
+			}
+			catch (Exception ex)
+			{
+				Console.WriteLine(ex.Message);
+				goto ModelInput;
+			}
+
+
+
+		BrandInput: Console.WriteLine("Enter brand");
+			try
+			{
+				brand = Console.ReadLine();
+				if (brand.Length < 3)
+				{
+					throw new LengthException("Brand length cannot be less than 3");
+				}
+			}
+			catch (Exception ex)
+			{
+				Console.WriteLine(ex.Message);
+				goto BrandInput;
+			}
+
+
+		YearInput: Console.WriteLine("Enter year");
+			try
+			{
+				year = int.Parse(Console.ReadLine());
+				if (year < 1900)
+				{
+					throw new YearException("Year cannot be less than 1900");
+				}
+			}
+			catch (Exception ex)
+			{
+				Console.WriteLine(ex.Message);
+				goto YearInput;
+			}
+			
+			Console.WriteLine("Enter title");
+			title = Console.ReadLine();
+
+			Transport tr = new Transport
+			{
+				Id = id,
+				Model = model,
+				Brand = brand,
+				Year = year,
+				Title = title,
+				CreatedDate = DateTime.Now
+
+			};
+
+			Array.Resize(ref transports, transports.Length + 1);
+			transports[transports.Length - 1] = tr;
+
+			Console.WriteLine("Transport Created successfully");
+		}
+
+		public void GetAllTransports()
+		{
+
+			Console.WriteLine("\n=== All Transports ===");
+			foreach (var transport in transports)
+			{
+				Console.WriteLine($"Id: {transport.Id}\nModel: {transport.Model}\nBrand: {transport.Brand}\nYear: {transport.Year}\nTitle: {transport.Title}\nCreatedDate: {transport.CreatedDate}");
+				Console.WriteLine("---");
+			}
+		}
+	}
+}

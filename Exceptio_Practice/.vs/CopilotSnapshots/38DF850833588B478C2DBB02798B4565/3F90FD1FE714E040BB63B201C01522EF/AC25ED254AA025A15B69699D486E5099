@@ -1,0 +1,19 @@
+﻿
+using Exceptio_Practice.Services;
+
+TransportService transportService = new TransportService();
+
+while(true)
+{
+	try
+	{
+		transportService.CreateTransport("", "", 0, "");
+		transportService.GetAllTransports();
+
+		break;
+	}
+	catch (Exception ex)
+	{
+		Console.WriteLine(ex.Message);
+	}
+}

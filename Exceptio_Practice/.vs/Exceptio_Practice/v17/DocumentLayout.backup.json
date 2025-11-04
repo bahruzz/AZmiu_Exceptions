@@ -1,0 +1,130 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\Exceptions_Azmiu\\Exceptio_Practice\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C54C87AE-20ED-4CA4-B770-CE044451001B}|Exceptio_Practice\\Exceptio_Practice.csproj|c:\\users\\user\\desktop\\exceptions_azmiu\\exceptio_practice\\exceptio_practice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C54C87AE-20ED-4CA4-B770-CE044451001B}|Exceptio_Practice\\Exceptio_Practice.csproj|solutionrelative:exceptio_practice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C54C87AE-20ED-4CA4-B770-CE044451001B}|Exceptio_Practice\\Exceptio_Practice.csproj|c:\\users\\user\\desktop\\exceptions_azmiu\\exceptio_practice\\exceptio_practice\\services\\transportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C54C87AE-20ED-4CA4-B770-CE044451001B}|Exceptio_Practice\\Exceptio_Practice.csproj|solutionrelative:exceptio_practice\\services\\transportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C54C87AE-20ED-4CA4-B770-CE044451001B}|Exceptio_Practice\\Exceptio_Practice.csproj|c:\\users\\user\\desktop\\exceptions_azmiu\\exceptio_practice\\exceptio_practice\\model\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C54C87AE-20ED-4CA4-B770-CE044451001B}|Exceptio_Practice\\Exceptio_Practice.csproj|solutionrelative:exceptio_practice\\model\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C54C87AE-20ED-4CA4-B770-CE044451001B}|Exceptio_Practice\\Exceptio_Practice.csproj|c:\\users\\user\\desktop\\exceptions_azmiu\\exceptio_practice\\exceptio_practice\\model\\transport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C54C87AE-20ED-4CA4-B770-CE044451001B}|Exceptio_Practice\\Exceptio_Practice.csproj|solutionrelative:exceptio_practice\\model\\transport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C54C87AE-20ED-4CA4-B770-CE044451001B}|Exceptio_Practice\\Exceptio_Practice.csproj|c:\\users\\user\\desktop\\exceptions_azmiu\\exceptio_practice\\exceptio_practice\\services\\interfaces\\itransportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C54C87AE-20ED-4CA4-B770-CE044451001B}|Exceptio_Practice\\Exceptio_Practice.csproj|solutionrelative:exceptio_practice\\services\\interfaces\\itransportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C54C87AE-20ED-4CA4-B770-CE044451001B}|Exceptio_Practice\\Exceptio_Practice.csproj|c:\\users\\user\\desktop\\exceptions_azmiu\\exceptio_practice\\exceptio_practice\\exceptions\\duplicatetitleexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C54C87AE-20ED-4CA4-B770-CE044451001B}|Exceptio_Practice\\Exceptio_Practice.csproj|solutionrelative:exceptio_practice\\exceptions\\duplicatetitleexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Exceptions_Azmiu\\Exceptio_Practice\\Exceptio_Practice\\Program.cs",
+              "RelativeDocumentMoniker": "Exceptio_Practice\\Program.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Exceptions_Azmiu\\Exceptio_Practice\\Exceptio_Practice\\Program.cs",
+              "RelativeToolTip": "Exceptio_Practice\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T12:09:12.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TransportService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Exceptions_Azmiu\\Exceptio_Practice\\Exceptio_Practice\\Services\\TransportService.cs",
+              "RelativeDocumentMoniker": "Exceptio_Practice\\Services\\TransportService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Exceptions_Azmiu\\Exceptio_Practice\\Exceptio_Practice\\Services\\TransportService.cs*",
+              "RelativeToolTip": "Exceptio_Practice\\Services\\TransportService.cs*",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAQwF4AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T12:04:49.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DuplicateTitleException.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Exceptions_Azmiu\\Exceptio_Practice\\Exceptio_Practice\\Exceptions\\DuplicateTitleException.cs",
+              "RelativeDocumentMoniker": "Exceptio_Practice\\Exceptions\\DuplicateTitleException.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Exceptions_Azmiu\\Exceptio_Practice\\Exceptio_Practice\\Exceptions\\DuplicateTitleException.cs",
+              "RelativeToolTip": "Exceptio_Practice\\Exceptions\\DuplicateTitleException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T12:04:21.202Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ITransportService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Exceptions_Azmiu\\Exceptio_Practice\\Exceptio_Practice\\Services\\Interfaces\\ITransportService.cs",
+              "RelativeDocumentMoniker": "Exceptio_Practice\\Services\\Interfaces\\ITransportService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Exceptions_Azmiu\\Exceptio_Practice\\Exceptio_Practice\\Services\\Interfaces\\ITransportService.cs*",
+              "RelativeToolTip": "Exceptio_Practice\\Services\\Interfaces\\ITransportService.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T12:04:10.85Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Transport.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Exceptions_Azmiu\\Exceptio_Practice\\Exceptio_Practice\\Model\\Transport.cs",
+              "RelativeDocumentMoniker": "Exceptio_Practice\\Model\\Transport.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Exceptions_Azmiu\\Exceptio_Practice\\Exceptio_Practice\\Model\\Transport.cs",
+              "RelativeToolTip": "Exceptio_Practice\\Model\\Transport.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T12:03:44.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Exceptions_Azmiu\\Exceptio_Practice\\Exceptio_Practice\\Model\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "Exceptio_Practice\\Model\\BaseEntity.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Exceptions_Azmiu\\Exceptio_Practice\\Exceptio_Practice\\Model\\BaseEntity.cs",
+              "RelativeToolTip": "Exceptio_Practice\\Model\\BaseEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-04T12:03:42.06Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

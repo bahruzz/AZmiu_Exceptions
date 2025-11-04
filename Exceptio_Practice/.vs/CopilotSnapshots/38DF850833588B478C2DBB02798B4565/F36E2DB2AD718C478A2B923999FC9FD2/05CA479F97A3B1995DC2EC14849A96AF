@@ -1,0 +1,72 @@
+﻿using Exceptio_Practice.Exceptions;
+using Exceptio_Practice.Model;
+using Exceptio_Practice.Services.Interfaces;
+using System;
+using System.Transactions;
+
+namespace Exceptio_Practice.Services
+{
+	public class TransportService : ITransportService
+	{
+		 Transport[] transports = new Transport[0];
+
+		public void CreateTransport(string model, string brand, int year, string title)
+		{
+		Id: Console.WriteLine("ENter id");
+			if(!int.TryParse(Console.ReadLine(), out int id))
+			{
+				throw new FormatException("Id must be a number");
+				goto Id;
+			}
+		     Console.WriteLine("Enter model");
+		Model: model = Console.ReadLine();
+			if(string.IsNullOrWhiteSpace(model))
+			{
+				throw new NullorException("Model cannot be null");
+				goto Model;
+			}
+			Console.WriteLine("Enter brand");
+		Brand: brand = Console.ReadLine();
+			if(brand.Length < 3)
+			{
+				throw new LengthException("Brand length cannot be less than 3");
+				goto Brand;
+			}
+		Year: Console.WriteLine("Enter year");
+			year = int.Parse(Console.ReadLine());
+			if(year < 1900)
+			{
+				throw new YearException("Year cannot be less than 1900");
+				goto Year;
+			}
+			Console.WriteLine("Enter title");
+			title = Console.ReadLine();
+
+			Transport tr = new Transport
+			{
+				Id = id,
+				Model = model,
+				Brand = brand,
+				Year = year,
+				Title = title
+			};
+
+			Array.Resize(ref transports, transports.Length + 1);
+			transports[transports.Length - 1] = tr;
+
+			Console.WriteLine("Transport Created successfully");
+			
+		}
+
+		public void GetAllTransports()
+		{
+
+			Console.WriteLine("\n=== All Transports ===");
+			foreach (var transport in transports)
+			{
+				Console.WriteLine($"Id: {transport.Id}\nModel: {transport.Model}\nBrand: {transport.Brand}\nYear: {transport.Year}\nTitle: {transport.Title}");
+				Console.WriteLine("---");
+			}
+		}
+	}
+}
