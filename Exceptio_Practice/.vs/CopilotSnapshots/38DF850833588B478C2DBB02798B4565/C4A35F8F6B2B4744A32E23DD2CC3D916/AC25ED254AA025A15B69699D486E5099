@@ -1,0 +1,23 @@
+﻿using Exceptio_Practice.Services;
+
+TransportService transportService = new TransportService();
+
+while(true)
+{
+	transportService.CreateTransport("", "", 0, "");
+	transportService.GetAllTransports();
+	transportService.GetTransportById(0);
+	transportService.DeleteTransport(0);
+	transportService.GetTransportsByBrand("");
+
+	Console.WriteLine("\nDo you want to add another transport? (y/n)");
+	string response = Console.ReadLine();
+	if (response?.ToLower() != "y")
+	{
+		break;
+	}
+}
+
+// id ne gore Transport tapib ekrana cixar-33
+//id gore transport sil-33
+//filter methodu -brand gore olacaq"Mercedec brandinde transportlari goster"-33

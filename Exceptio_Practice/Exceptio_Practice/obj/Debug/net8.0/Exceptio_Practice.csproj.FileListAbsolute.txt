@@ -12,3 +12,4 @@ C:\Users\user\Desktop\Exceptions_Azmiu\Exceptio_Practice\Exceptio_Practice\obj\D
 C:\Users\user\Desktop\Exceptions_Azmiu\Exceptio_Practice\Exceptio_Practice\obj\Debug\net8.0\Exceptio_Practice.pdb
 C:\Users\user\Desktop\Exceptions_Azmiu\Exceptio_Practice\Exceptio_Practice\obj\Debug\net8.0\Exceptio_Practice.genruntimeconfig.cache
 C:\Users\user\Desktop\Exceptions_Azmiu\Exceptio_Practice\Exceptio_Practice\obj\Debug\net8.0\ref\Exceptio_Practice.dll
+C:\Users\user\Desktop\Exceptions_Azmiu\Exceptio_Practice\Exceptio_Practice\obj\Debug\net8.0\Exceptio_Practice.sourcelink.json

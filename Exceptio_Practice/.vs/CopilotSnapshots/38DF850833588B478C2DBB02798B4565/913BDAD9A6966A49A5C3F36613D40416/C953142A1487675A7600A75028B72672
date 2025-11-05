@@ -5,7 +5,9 @@ using Exceptio_Practice.Services.Interfaces;
 namespace Exceptio_Practice.Services
 {
 	public class TransportService : ITransportService
-	{
+	{// id ne gore Transport tapib ekrana cixar-33
+	 //id gore transport sil-33
+	 //filter methodu -brand gore olacaq"Mercedec brandinde transportlari goster"-33
 		Transport[] transports = new Transport[0];
 
 		public void CreateTransport(string model, string brand, int year, string title)
@@ -101,13 +103,16 @@ namespace Exceptio_Practice.Services
 			{
 				if (transports[i].Id == id)
 				{
+					// Create new array without the deleted transport
 					Transport[] newTransports = new Transport[transports.Length - 1];
 					
+					// Copy elements before the deleted one
 					for (int j = 0; j < i; j++)
 					{
 						newTransports[j] = transports[j];
 					}
 					
+					// Copy elements after the deleted one
 					for (int j = i + 1; j < transports.Length; j++)
 					{
 						newTransports[j - 1] = transports[j];

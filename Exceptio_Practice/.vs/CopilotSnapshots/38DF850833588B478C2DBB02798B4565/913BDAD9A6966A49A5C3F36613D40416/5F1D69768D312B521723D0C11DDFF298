@@ -5,7 +5,9 @@ using Exceptio_Practice.Services.Interfaces;
 namespace Exceptio_Practice.Services
 {
 	public class TransportService : ITransportService
-	{
+	{// id ne gore Transport tapib ekrana cixar-33
+	 //id gore transport sil-33
+	 //filter methodu -brand gore olacaq"Mercedec brandinde transportlari goster"-33
 		Transport[] transports = new Transport[0];
 
 		public void CreateTransport(string model, string brand, int year, string title)
@@ -97,28 +99,7 @@ namespace Exceptio_Practice.Services
 
 		public void DeleteTransport(int id)
 		{
-			for (int i = 0; i < transports.Length; i++)
-			{
-				if (transports[i].Id == id)
-				{
-					Transport[] newTransports = new Transport[transports.Length - 1];
-					
-					for (int j = 0; j < i; j++)
-					{
-						newTransports[j] = transports[j];
-					}
-					
-					for (int j = i + 1; j < transports.Length; j++)
-					{
-						newTransports[j - 1] = transports[j];
-					}
-					
-					transports = newTransports;
-					Console.WriteLine($"Transport with Id {id} deleted successfully");
-					return;
-				}
-			}
-			throw new NotFoundException($"Transport with Id {id} not found");
+			throw new NotImplementedException();
 		}
 
 		public void GetAllTransports()
@@ -134,37 +115,12 @@ namespace Exceptio_Practice.Services
 
 		public void GetTransportById(int id)
 		{
-			foreach (var transport in transports)
-			{
-				if (transport.Id == id)
-				{
-					Console.WriteLine("\n=== Transport Found ===");
-					Console.WriteLine($"Id: {transport.Id}\nModel: {transport.Model}\nBrand: {transport.Brand}\nYear: {transport.Year}\nTitle: {transport.Title}\nCreatedDate: {transport.CreatedDate}");
-					return;
-				}
-			}
-			throw new NotFoundException($"Transport with Id {id} not found");
+			throw new NotImplementedException();
 		}
 
 		public void GetTransportsByBrand(string brand)
 		{
-			bool found = false;
-			Console.WriteLine($"\n=== Transports with Brand: {brand} ===");
-			
-			foreach (var transport in transports)
-			{
-				if (transport.Brand.Equals(brand, StringComparison.OrdinalIgnoreCase))
-				{
-					Console.WriteLine($"Id: {transport.Id}\nModel: {transport.Model}\nBrand: {transport.Brand}\nYear: {transport.Year}\nTitle: {transport.Title}\nCreatedDate: {transport.CreatedDate}");
-					Console.WriteLine("---");
-					found = true;
-				}
-			}
-			
-			if (!found)
-			{
-				throw new NotFoundException($"No transports found with brand: {brand}");
-			}
+			throw new NotImplementedException();
 		}
 	}
 }
