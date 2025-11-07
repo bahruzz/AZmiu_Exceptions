@@ -1,16 +1,74 @@
 ﻿using Exceptio_Practice.Services;
 
+RegisterService registerService = new RegisterService();
 TransportService transportService = new TransportService();
 
+bool isLoggedIn = false;
+
+while (!isLoggedIn)
+{
+	Console.Clear();
+	Console.WriteLine("===== AUTHENTICATION MENU =====");
+	Console.WriteLine("1. Register");
+	Console.WriteLine("2. Login");
+	Console.WriteLine("0. Exit");
+	Console.WriteLine("================================");
+	Console.Write("Select an option: ");
+
+	string authChoice = Console.ReadLine();
+
+	try
+	{
+		switch (authChoice)
+		{
+			case "1":
+				registerService.Register();
+				Console.WriteLine("\nPress any key to continue...");
+				Console.ReadKey();
+				break;
+
+			case "2":
+				isLoggedIn = registerService.Login();
+				if (isLoggedIn)
+				{
+					Console.WriteLine("\nPress any key to continue to Transport Management...");
+					Console.ReadKey();
+				}
+				else
+				{
+					Console.WriteLine("\nPress any key to try again...");
+					Console.ReadKey();
+				}
+				break;
+
+			case "0":
+				Console.WriteLine("Exiting... Goodbye!");
+				return;
+
+			default:
+				Console.WriteLine("Invalid option! Please select 0, 1, or 2.");
+				Console.WriteLine("\nPress any key to continue...");
+				Console.ReadKey();
+				break;
+		}
+	}
+	catch (Exception ex)
+	{
+		Console.WriteLine($"Error: {ex.Message}");
+		Console.WriteLine("\nPress any key to continue...");
+		Console.ReadKey();
+	}
+}
 while (true)
 {
-	Console.WriteLine("\n===== Transport Management System =====");
+	Console.Clear();
+	Console.WriteLine("===== TRANSPORT MANAGEMENT SYSTEM =====");
 	Console.WriteLine("1. Create Transport");
 	Console.WriteLine("2. Get All Transports");
 	Console.WriteLine("3. Get Transport By Id");
 	Console.WriteLine("4. Delete Transport");
 	Console.WriteLine("5. Get Transports By Brand");
-	Console.WriteLine("0. Exit");
+	Console.WriteLine("0. Logout");
 	Console.WriteLine("========================================");
 	Console.Write("Select an option: ");
 
@@ -59,7 +117,7 @@ while (true)
 				break;
 
 			case "0":
-				Console.WriteLine("Exiting... Goodbye!");
+				Console.WriteLine("Logging out... Goodbye!");
 				return;
 
 			default:
@@ -74,5 +132,4 @@ while (true)
 
 	Console.WriteLine("\nPress any key to continue...");
 	Console.ReadKey();
-	Console.Clear();
 }

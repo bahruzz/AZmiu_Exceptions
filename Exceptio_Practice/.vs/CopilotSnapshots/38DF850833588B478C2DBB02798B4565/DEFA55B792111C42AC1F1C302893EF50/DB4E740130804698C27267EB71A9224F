@@ -1,0 +1,8 @@
+﻿namespace Exceptio_Practice.Services.Interfaces
+{
+	public interface IRegisterService
+	{
+		void Register();
+		bool Login();
+	}
+}
